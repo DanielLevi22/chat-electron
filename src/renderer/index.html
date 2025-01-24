@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+  http-equiv="Content-Security-Policy"
+  content="
+    default-src * 'unsafe-inline' 'unsafe-eval';
+    script-src * 'unsafe-inline' 'unsafe-eval';
+    style-src * 'unsafe-inline';
+    font-src * data:;
+    img-src * data:;
+    connect-src * ws://* wss://*;
+  "
+/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 32px;
+}
+.container-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 100px;
+}
+
+.container-messages::-webkit-scrollbar {
+  display: none;
+}
+.container-input-message {
+  position: sticky;
+  bottom: 0;
+  padding-bottom: 20px;
+}

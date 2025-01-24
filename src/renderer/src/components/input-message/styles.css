@@ -1,0 +1,65 @@
+.input-message-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-cinza);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.input-message {
+  border: none;
+  flex: 1;
+  padding: 16px;
+  background: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.input-message::-webkit-input-placeholder {
+  color: var(--text-secondary);
+}
+
+.input-message:-ms-input-placeholder {
+  color: var(--text-secondary);
+}
+
+.input-message::-moz-placeholder {
+  color: var(--text-secondary);
+}
+
+.input-message::-webkit-input-placeholder {
+  color: var(--text-secondary);
+}
+
+.input-message::-webkit-clear-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.input-message::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+.button {
+  font-weight: 600;
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  background-color: var(--black);
+  color: var(--white);
+  outline: none;
+  padding: 16px;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  color: var(--white);
+}
